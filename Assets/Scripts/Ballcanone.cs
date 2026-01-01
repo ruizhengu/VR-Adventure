@@ -20,7 +20,7 @@ public class Ballcanone : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionStay(Collision collision)
     {
-        ball.GetComponent<Rigidbody>().velocity = SpawnPoint.position * 2;
+        ball.GetComponent<Rigidbody>().linearVelocity = SpawnPoint.position * 2;
     }
 }
 

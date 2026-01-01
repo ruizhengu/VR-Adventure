@@ -18,7 +18,7 @@ public Vector3 startPosition;
     {
         if(transform.position.z > 1f) {
             transform.position = startPosition;
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
         }
     }
 }
